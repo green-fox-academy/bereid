@@ -1,0 +1,57 @@
+body {
+    font-family: 'consolas', 'courier';
+    background-image: url("topography.png")
+}
+
+.logo {
+    padding: 8px 10%;
+}
+
+.padding {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.navigationbar {
+    color: #ff0099;
+    text-align: right;
+    padding-right: 10%;
+    word-spacing: 30px;
+    background-color: #333333;
+    line-height: 50px;
+}
+
+a {
+    color: #ff0099;
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    
+}
+
+.alias {
+    color: #ff0099;
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+}
+
+.separator {
+    font-size: 30px;
+    text-align: center;
+}
+
+.technology {
+    font-size: 30px;
+    text-align: center;
+}
+
+.alcim {
+    font-size: 26px;
+    font-family: 'Merriweather', serif;
+}
