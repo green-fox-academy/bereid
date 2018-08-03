@@ -270,3 +270,59 @@ let number: number = 15;
 for(let i = 1; i <= 10; i++){
     console.log(i + " * 15 = " + i * 15);
 }
+// Write a program that prints the numbers from 1 to 100.
+// But for multiples of three print “Fizz” instead of the number
+// and for the multiples of five print “Buzz”.
+// For numbers which are multiples of both three and five print “FizzBuzz”.
+
+let num: number
+
+for(let num = 1; num <= 100; num++){
+    if(num % 15 == 0){
+        console.log("FizzBuzz");
+    }
+    else if(num % 5 == 0) {
+        console.log("Buzz");
+    }
+    else if(num % 3 == 0){
+        console.log("Fizz");
+    } 
+    else {
+        console.log(num)
+    }
+}
+
+// Write a program that draws a triangle like this:
+//
+// *
+// **
+// ***
+// ****
+//
+// The triangle should have as many lines as lineCount is
+
+let lineCount: number = 4;
+
+for(let star: string = '*'; star.length <= lineCount; star += '*'){
+    console.log(star);
+}
+
+// Write a program that draws a
+// pyramid like this:
+//
+//    *
+//   ***
+//  *****
+// *******
+//
+// The pyramid should have as many lines as lineCount is
+
+let lineCount2: number = 4;
+let starCount: string = '*'
+let spaceCount: string = '   '
+
+for(let mm: number = 1; mm <= lineCount2; mm++){
+    console.log(spaceCount + starCount)
+    spaceCount = spaceCount.slice (0, -1)
+    starCount += '**'
+}
