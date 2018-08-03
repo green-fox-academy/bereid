@@ -132,7 +132,7 @@ console.log(j % 5 == 0 || j % 3 == 0);
 
 let k: string = 'Apple';
 // fill the k variable with its content 4 times
-console.log(k );
+console.log(k+k+k+k);
 
 // Write a program that stores 3 sides of a cuboid as variables (floats)
 // The program should write the surface area and volume of the cuboid like:
@@ -147,3 +147,55 @@ let surfaceArea: number = (cuboidSideA * cuboidSideB * 2) + (cuboidSideB * cuboi
 let cubeVolume: number = cuboidSideA * cuboidSideB * cuboidSideC
 
 console.log(surfaceArea, cubeVolume);
+
+// Write a program that prints the remaining seconds (as an integer) from a
+// day if the current time is represented by these variables
+
+let currentHours: number = 14;
+let currentMinutes: number = 34;
+let currentSeconds: number = 42;
+let dayAllseconds: number = 24 * 60 * 60
+
+console.log(dayAllseconds - (currentHours * 60 * 60 + currentMinutes * 60 + currentSeconds));
+
+//Ujabb feladat szinten cim nelkul
+
+let l: number = 24;
+let out: number = 0;
+
+// if l is even increment out by one
+if(l % 2 == 0){
+    out++
+    console.log(out)
+}
+
+let n: number = 13;
+let out2: string = '';
+
+// if b is between 10 and 20 set out2 to "Sweet!"
+// if less than 10 set out2 to "Less!",
+// if more than 20 set out2 to "More!"
+console.log(out2);
+
+let m: number = 123;
+let credits: number = 100;
+let isBonus: boolean = false;
+
+// if credits are at least 50,
+// and is_bonus is false decrement c by 2
+// if credits are smaller than 50,
+// and is_bonus is false decrement c by 1
+// if is_bonus is true c should remain the same
+console.log(c);
+
+let q: number =  8;
+let time: number = 120;
+let out3: string = '';
+
+// if d is dividable by 4
+// and time is not more than 200
+// set out3 to "check"
+// if time is more than 200
+// set out3 to "Time out"
+// otherwise set out3 to "Run Forest Run!"
+console.log(out3);
