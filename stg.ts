@@ -235,3 +235,38 @@ let iDontCheat = "I won't cheat on the exam!"
 for(u; u <= 100; u++){
     console.log(iDontCheat)
 }
+
+// Create a program that prints all the even numbers between 0 and 500
+
+let parosSzamok: number = 0
+let p = 0
+
+for(let p: number = 1; p < 500; p++){
+    if(p % 2 == 0)
+    console.log(p);
+}
+
+//ujfeladat
+
+let number: number = 15;
+
+// Create a program that
+// prints the multiplication table with number
+//
+// Example:
+// The number 15 should print:
+//
+// 1 * 15 = 15
+// 2 * 15 = 30
+// 3 * 15 = 45
+// 4 * 15 = 60
+// 5 * 15 = 75
+// 6 * 15 = 90
+// 7 * 15 = 105
+// 8 * 15 = 120
+// 9 * 15 = 135
+// 10 * 15 = 150
+
+for(let i = 1; i <= 10; i++){
+    console.log(i + " * 15 = " + i * 15);
+}
