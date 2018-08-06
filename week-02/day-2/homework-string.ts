@@ -40,5 +40,4 @@ console.log(charstr);
 let mystring7 = "Don't be afraid, "
 let mystring8 = "we will be champions one day!"
 let mystring9 = mystring7.concat(mystring8);
-
 console.log(mystring9);
