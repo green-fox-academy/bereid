@@ -8,11 +8,9 @@ export {}
 
 let name: string = "Greenfox"
 
-function greet(greetName: string = "SB"){
+function greet(greetName?: string){
     return "Greetings, dear " + greetName
 }
 
 let answer = greet(name);
 console.log(answer);
-
-greet();
