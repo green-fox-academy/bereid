@@ -19,6 +19,8 @@ for(let i = 1; i < 5; i++){
 
 }
 
+//masik megoldas
+
 let blackRow = "% % % %"
 let whiteRow = " % % % %"
 
