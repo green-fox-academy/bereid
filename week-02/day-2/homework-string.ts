@@ -17,13 +17,13 @@ let myString3 = "Jurgen Klopp is a good coach"
 let splittedString = myString3.split(" ");
 console.log(splittedString);
 
-// ????? substring: visszahozza egy string karaktereit egy meghatarozott indextol meghatarozott karakterszamon at 
+// substr: levagja a string elejet es veget a meghatarozott indexektol bizonyos karakterszamot 
 
-let myString4 = "Mohamed Salah is a great player"
-let substr = myString4.substring(8);
+let myString4 = 'Mohamed Salah is a great player'
+let substr = myString4.substr(8, 23);
 console.log(substr);
 
-//slice: levagja a string elejet es veget a meghatarozott indexekig/-tol
+//slice: levagja a string elejet es veget a meghatarozott indexektol/-ig
 
 let myString5 = "Roberto Firmino is the best player"
 let slicestr = myString5.slice(8, -7);

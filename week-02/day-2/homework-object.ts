@@ -1,4 +1,6 @@
-// object: egy csomagba tobb valtozot es erteket tudunk vele meghatarozni
+export {}
+
+// object: egy csomagba tobb kulcsot es erteket tudunk vele meghatarozni
 
 let pets = {
     animalname: "Cetli",
@@ -17,9 +19,39 @@ console.log(Object.keys(pets));
 //
 //console.log(Object.values(pets));
 
-// Object.hasOwnProperty: boolean formaban jelzi, hogy az adott objectben van-e a megadott ertek
-// Itt is para van: nem erti azt, hogy pets.property1 = 33,
-//
-// pets.property1 = 33,
-// console.log(pets.hasOwnProperty("animalege"));
+// megmondja, van-e benne a megadott ertek
+
+let isMyPetAge: boolean = pets.hasOwnProperty(3);
+console.log(isMyPetAge);
+
+// ertek kiiratasa
+
+let diak = {
+    name: "Gabor",
+    className: "Coffee",
+    age: 25
+}
+
+console.log(diak.name);
+
+function printName(myObject: object){
+    console.log(myObject["name"]);
+}
+
+printName(diak);
+
+// tömbbe helyezett objectek
+
+let myClass: object[] = [
+    {
+        age: 20,
+        name: "Anna"
+    },
+    {
+        age: 20,
+        name: "Gabor"
+    }
+];
+
+console.log(myClass[1]["name"]);
 
