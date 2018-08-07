@@ -6,13 +6,10 @@ export {}
 
 let numList = [1,2,3,8,5,6]
 
-let answer = numList.map(function (num) {
-    if(num % 8 == 0){
-        return num / 2;
-    }
-    else{
-        return num;
+numList.map(function (num) {
+    if(num == 3){
+        numList.splice(num, 1, 4);
     }
 })
 
-console.log(answer);
+console.log(numList);
