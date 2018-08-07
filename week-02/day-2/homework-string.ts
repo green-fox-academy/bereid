@@ -17,7 +17,7 @@ let myString3 = "Jurgen Klopp is a good coach"
 let splittedString = myString3.split(" ");
 console.log(splittedString);
 
-// substr: levagja a string elejet es veget a meghatarozott indexektol bizonyos karakterszamot 
+// substr: levagja a stringet a meghatarozott indextol bizonyos karakterszamon at
 
 let myString4 = 'Mohamed Salah is a great player'
 let substr = myString4.substr(8, 23);
