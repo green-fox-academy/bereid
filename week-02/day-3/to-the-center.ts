@@ -20,3 +20,5 @@ function threeLineDraw (step){
         lineDraw(step * i, 0);
     }
 }
+
+threeLineDraw(6);
