@@ -10,7 +10,3 @@ function doubling(inputNumber: number): number {
 
 let answer = doubling(baseNum);
 console.log(answer);
-
-
-
-
