@@ -11,5 +11,4 @@ function factorio(inputNumber: number){
     return factorio;
 }
 
-console.log(factorio(7));
-
+console.log(factorio(11));

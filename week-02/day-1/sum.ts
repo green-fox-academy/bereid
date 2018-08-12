@@ -11,5 +11,4 @@ function sum(inputNumber: number){
     return sum;
 }
 
-console.log(sum(43));
-
+console.log(sum(444));
