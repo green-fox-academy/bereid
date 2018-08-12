@@ -7,7 +7,7 @@
 let firstList = [1,2,3]
 let secondList = [4, 5]
 
-if(firstList.length < secondList.length){
+if(firstList.length > secondList.length){
     console.log("First list is longer than second");
 }else {
     console.log("Second list is longer than first");
