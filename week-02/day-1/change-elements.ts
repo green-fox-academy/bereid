@@ -12,4 +12,4 @@ numList.map(function (num) {
     }
 })
 
-console.log(numList);
+console.log(numList[3]);
