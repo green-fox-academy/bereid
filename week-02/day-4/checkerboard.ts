@@ -26,11 +26,11 @@ function drawChessresponsive(size) {
     for (let j = 0; j < canvas.width; j++) {
         for (let i = 0; i < canvas.height; i++) {
             if (i % 2 == 0 && j % 2 == 0 || i % 2 == 1 && j % 2 == 1) {
-                ctx.fillStyle = "black"
+                ctx.fillStyle = "#6CDAE7"
                 ctx.fillRect(j * size, i * size, size, size);
             }
         }
     }
 }
 
-drawChessresponsive(5);
+drawChessresponsive(40);

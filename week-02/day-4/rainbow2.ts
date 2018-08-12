@@ -4,7 +4,7 @@ const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 
 let colors: string [] = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
-let distance: number = 3;
+let distance: number = 30;
 
 function rainbowBoxes (input: number, color: string) {
     let period = canvas.height / distance;
