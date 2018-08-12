@@ -10,4 +10,5 @@ let cuboidSideC: number = 11
 let surfaceArea: number = (cuboidSideA * cuboidSideB * 2) + (cuboidSideB * cuboidSideC * 2) + (cuboidSideA * cuboidSideC *2)
 let cubeVolume: number = cuboidSideA * cuboidSideB * cuboidSideC
 
-console.log(surfaceArea, cubeVolume);
+console.log("Surface Area: " + surfaceArea);
+console.log("Volume: " + cubeVolume);

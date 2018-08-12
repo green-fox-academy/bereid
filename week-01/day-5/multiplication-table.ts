@@ -1,5 +1,3 @@
-let number: number = 15;
-
 // Create a program that
 // prints the multiplication table with number
 //
@@ -18,5 +16,5 @@ let number: number = 15;
 // 10 * 15 = 150
 
 for(let i = 1; i <= 10; i++){
-    console.log(i + " * 15 = " + i * 15);
+    console.log(i + " * 33 = " + i * 33);
 }

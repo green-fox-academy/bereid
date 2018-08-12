@@ -3,8 +3,6 @@
 // and for the multiples of five print “Buzz”.
 // For numbers which are multiples of both three and five print “FizzBuzz”.
 
-let num: number
-
 for(let num = 1; num <= 100; num++){
     if(num % 15 == 0){
         console.log("FizzBuzz");

@@ -2,5 +2,6 @@
 
 let massInKg: number = 81.2;
 let heightInM: number = 1.78;
+let myBmi: number = massInKg / (heightInM ** 2)
 
-console.log(massInKg / (heightInM ** 2));
+console.log(myBmi);

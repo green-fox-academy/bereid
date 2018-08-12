@@ -3,7 +3,7 @@ let out: number = 0;
 
 // if l is even increment out by one
 if(l % 2 == 0){
-    out = out + 1
+    out += 1
     console.log(out)
 }
 
@@ -34,13 +34,13 @@ let isBonus: boolean = false;
 // if is_bonus is true m should remain the same
 
 if(credits >= 50 && isBonus === false){
-    m = m - 2
+    m -= 2
 }
 else if(credits < 50 && isBonus === false){
-    m = m - 1
+    m -= 1
 }
 else if(isBonus){
-    m = m - 0
+    m
 }
 
 console.log(m);
