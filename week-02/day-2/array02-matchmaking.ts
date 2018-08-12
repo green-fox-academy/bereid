@@ -2,8 +2,8 @@
 // Write a function that joins two array by matching one girl with one boy in a new array
 // Exepected output: ["Eve", "Joe", "Ashley", "Fred"...]
 
-let girls: string[] = ['Eve', 'Ashley', 'Claire', 'Kat', 'Jane', 'Mari', 'Bori'];
-let boys: string[] = ['Joe', 'Fred', 'Tom', 'Todd', 'Neef', 'Jeff', 'Jani'];
+let girls: string[] = ['Eve', 'Ashley', 'Claire', 'Kat', 'Jane'];
+let boys: string[] = ['Joe', 'Fred', 'Tom', 'Todd', 'Neef', 'Jeff'];
 
 function beTogether(array, array2){
     let newarray: string[] = []

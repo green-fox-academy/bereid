@@ -8,7 +8,7 @@ let addPlanet: string = "Saturn"
 
 planetList.push(addPlanet);
 
-function putSaturn(list){
+function putSaturn(list: string []){
     return list.slice(0, 7);
 }
 
