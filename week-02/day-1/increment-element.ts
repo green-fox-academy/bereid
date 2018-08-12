@@ -6,7 +6,7 @@ export {}
 
 let numList = [1,2,3,4,5]
 
-numList.map(function (num) {
+numList.forEach(function (num) {
     if(num == 2){
         num + 1
     }
