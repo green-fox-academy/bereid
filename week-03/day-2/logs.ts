@@ -8,33 +8,39 @@ export { };
 declare function require(path: string): any;
 const fs = require("fs");
 const charBase: string = "utf-8";
-let multiArray = readAndSplitData("log.txt");
+let multiArray: string[][] = readAndSplitData("log.txt");
 
-function readAndSplitData(fileName: string) {
-  try {
-    let arrayOfIp = fs.readFileSync(fileName, charBase).split("\n");
-    let multiArray = arrayOfIp.map(element => {
-      return element.split("   ");
-    })
-    return multiArray;
-  }
-  catch (e) {
-    return e.message;
-  }
+function readAndSplitData(fileName: string): string[][] {
+  let arrayOfIp: string[] = fs.readFileSync(fileName, charBase).split("\n");
+  let multiArray: string[][] = arrayOfIp.map(element => {
+    return element.split("   ");
+  });
+  return multiArray;
 }
 
-function pushUniques(array) {
+function pushUniques(array: string[][]): string[] {
   let uniqueIps = [];
   for (let i = 0; i < array.length; i++) {
-    if (uniqueIps.indexOf(array[i][1]) === - 1) {
+    if (uniqueIps.indexOf(array[i][1]) === -1) {
       uniqueIps.push(array[i][1]);
     }
   }
   return uniqueIps;
 }
 
-function ratioGetPost (){
-  
+function ratioGetPost(array: string [][]): number {
+  let numOfGets: number = 0
+  let numOfPosts: number = 0
+  array.map(element => {
+    if(element[2] === "GET /"){
+      numOfGets ++; 
+    }
+    else if (element[2] === "POST /"){
+      numOfPosts ++;
+    }
+  });
+  return numOfGets/numOfPosts;
 }
 
 console.log(pushUniques(multiArray));
+console.log(ratioGetPost(multiArray));
