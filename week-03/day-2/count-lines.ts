@@ -10,7 +10,7 @@ const charBase: string = "utf-8";
 
 function countLines(fileName: string): number {
   try {
-    let lengthOfFile: number = fs.readFileSync(fileName, charBase).split("\n").length
+    let lengthOfFile: number = fs.readFileSync(fileName, charBase).split("\n").length;
     return lengthOfFile;
   }
   catch (e) {
