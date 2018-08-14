@@ -8,22 +8,33 @@ export { };
 declare function require(path: string): any;
 const fs = require("fs");
 const charBase: string = "utf-8";
+let multiArray = readAndSplitData("log.txt");
 
-function readAndSplitData(fileName: string){
-  try{
+function readAndSplitData(fileName: string) {
+  try {
     let arrayOfIp = fs.readFileSync(fileName, charBase).split("\n");
     let multiArray = arrayOfIp.map(element => {
       return element.split("   ");
-    });;
-    let justIps = []
-    multiArray.forEach(element => {
-      justIps.push(element[1]);
-    });
-    return justIps;
+    })
+    return multiArray;
   }
-  catch(e){
+  catch (e) {
     return e.message;
   }
 }
 
-console.log(readAndSplitData("log.txt"));
+function pushUniques(array) {
+  let uniqueIps = [];
+  for (let i = 0; i < array.length; i++) {
+    if (uniqueIps.indexOf(array[i][1]) === - 1) {
+      uniqueIps.push(array[i][1]);
+    }
+  }
+  return uniqueIps;
+}
+
+function ratioGetPost (){
+  
+}
+
+console.log(pushUniques(multiArray));
