@@ -9,18 +9,21 @@ declare function require(path: string): any;
 const fs = require("fs");
 const charBase: string = "utf-8";
 
-function readData(fileName: string){
+function readAndSplitData(fileName: string){
   try{
     let arrayOfIp = fs.readFileSync(fileName, charBase).split("\n");
-    let uniqueIps = arrayOfIp.map(element => {
+    let multiArray = arrayOfIp.map(element => {
       return element.split("   ");
     });;
-    return uniqueIps;
+    let justIps = []
+    multiArray.forEach(element => {
+      justIps.push(element[1]);
+    });
+    return justIps;
   }
   catch(e){
     return e.message;
   }
 }
 
-
-console.log(readData("log.txt"));
+console.log(readAndSplitData("log.txt"));
