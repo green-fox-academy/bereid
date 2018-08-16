@@ -24,7 +24,7 @@ export class Animal {
     this.thirst ++;
   }
   getHungry(): number{
-    return ;
+    return this.hunger;
   }
 }
 
