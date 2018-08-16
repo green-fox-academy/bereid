@@ -19,7 +19,7 @@ class Ellipse {
   name () {
     console.log(this);
   }  
-  // methods can be static, that logic only contains to the class, not the insterted objects
+  // methods can be static, that logic only contains to the class, not the insterted objects and outer logics cant modify it
   static name2 () {
     console.log(this.studentMoney);
   }  
