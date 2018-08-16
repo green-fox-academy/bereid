@@ -8,3 +8,14 @@ function factorial(num: number): number {
 }
 
 console.log(factorial(6));
+
+function powerN (base: number, exponent: number): number{
+  let result: number = 1;
+  if (exponent == 1){
+    return base;
+  } else {
+    return base * powerN(base, exponent - 1);
+  }
+}
+
+console.log(powerN(5, 6));
