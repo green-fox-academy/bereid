@@ -7,4 +7,4 @@ function giveStar (string){
   return newString;
 }
 
-console.log(giveStar("It's really do not need recursion!"))
+console.log(giveStar("It doesn't really need recursion!"))
