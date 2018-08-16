@@ -5,3 +5,18 @@
 // and so on. Define a recursive fibonacci(n) method that returns the nth
 // fibonacci number, with n=0 representing the start of the sequence.
 
+let newFibonacciSequence: number[] = [0, 1]
+
+function fibonacci(sequencelenght: number, start: number): number[] {
+  if (sequencelenght >= 0) {
+    let newNumber = newFibonacciSequence[start - 1] + newFibonacciSequence[start - 2];
+    newFibonacciSequence.push(newNumber);
+    sequencelenght--;
+    start++;
+    return fibonacci(sequencelenght, start);
+  } else {
+    return newFibonacciSequence;
+  }
+}
+
+console.log(fibonacci(77, 2));
