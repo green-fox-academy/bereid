@@ -12,7 +12,7 @@ class Counter {
     this.counterNum = counterNum;
   }
   add(addNumber?: any){
-    if(addNumber > 0){
+    if(addNumber != undefined){
       this.counterNum += addNumber;
     }else{
       this.counterNum ++;
