@@ -8,9 +8,8 @@ export abstract class Animal {
 
   abstract getName();
   
-  breed() {
-
-  }
+  abstract breed();
+  
   feed() {
 
   }
