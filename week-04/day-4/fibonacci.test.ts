@@ -17,3 +17,8 @@ test('Is this fibonacci number you wanted?', t => {
   t.equal(6765, fibonacciOnIndex(20), 'Yes, it is!');
   t.end();
 });
+
+test('Is this fibonacci number you wanted?', t => {
+  t.equal(-1, fibonacciOnIndex(-10), 'Yes, it is!');
+  t.end();
+});
