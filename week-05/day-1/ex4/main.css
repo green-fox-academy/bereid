@@ -13,7 +13,7 @@ nav {
     background: purple;
     position: fixed;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin: 0px;
 }
 
@@ -43,9 +43,18 @@ nav a {
 .maincontent{
     background: yellow;
     flex-grow: 2;
+    order: 1;
+    margin-left: 10px;
 }
 
 .sidebar{
     background: green;
     flex-grow: 1;
+    order: 0;
+}
+
+.footer{
+    background: gray;
+    height: 200px;
+    margin-top: 10px;
 }
