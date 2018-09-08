@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    max-width: 800px;
+}
+
+.item {
+    flex: 0 0 100px;
+}
+
+.green {
+    background: green;
+    order: 0;
+}
+
+.yellow {
+    background: yellow;
+    order: 2;
+    flex-basis: 200px;
+}
+
+.purple {
+    background: purple;
+    order: 1;
+}

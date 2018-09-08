@@ -1,0 +1,21 @@
+.container{
+    background: yellow;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item {
+    background: purple;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    align-self: flex-end;
+}
+
+ul{
+    list-style-type: none;
+}

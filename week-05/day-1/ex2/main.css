@@ -1,0 +1,14 @@
+.container {
+    background: yellow;
+    width: 1200px;
+    height: 400px;
+    display: flex;
+}
+
+.item {
+    background: purple;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto auto;
+}
