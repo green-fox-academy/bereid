@@ -38,6 +38,12 @@ nav a {
 .body {
     display: flex;
     height: 1000px;
+    margin-top: 10px;
+}
+
+.spacer {
+    height: 70px;
+    width: 100%;
 }
 
 .maincontent{
