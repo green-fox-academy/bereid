@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    background: purple;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    display: flex;
+}
+
+nav li {
+    background: aqua;
+    width: fit-content;
+    padding: 10%;
+    align-self: center;
+    margin: 10%;
+}
