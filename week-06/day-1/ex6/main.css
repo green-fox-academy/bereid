@@ -36,11 +36,35 @@ nav li {
     order: 0;
     height: 100%;
     width: 100%;
+    padding: 30px;
+}
+
+.introtext {
+    text-align: justify;
+}
+
+.redboxes {
+    display: flex;
+    margin: 0 auto;
+}
+
+.redboxes ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redboxes li {
+    background: red;
+    height: 8vmax;
+    width: 8vmax;
+    margin: 2%;
 }
 
 .sidebar {
     background: green;
     order: 1;
-    width: 300px;
+    width: 400px;
     height: 100%;
 }
+
