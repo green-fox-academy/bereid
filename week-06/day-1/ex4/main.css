@@ -21,6 +21,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
+    align-self: center;
 }
 
 nav li {
@@ -29,6 +30,7 @@ nav li {
     background: cyan;
     margin: 5px;
     padding: 5px;
+    
 }
 
 nav a {
