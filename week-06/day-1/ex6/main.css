@@ -1,0 +1,46 @@
+body {
+    margin: 0 0;
+}
+
+.wrapper {
+    max-width: 968px;
+    width: 100%;
+    margin: auto auto;
+    height: 1200px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    background: purple;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+    padding: 10px;
+}
+
+.documentbody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.maincontent {
+    background: yellow;
+    order: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    background: green;
+    order: 1;
+    width: 300px;
+    height: 100%;
+}
