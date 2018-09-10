@@ -2,11 +2,15 @@ body {
     margin: 0 0;
 }
 
+p {
+    text-align: justify;
+}
+
 .wrapper {
     max-width: 968px;
     width: 100%;
     margin: auto auto;
-    height: 1200px;
+    height: 1000px;
 }
 
 nav {
@@ -39,13 +43,10 @@ nav li {
     padding: 30px;
 }
 
-.introtext {
-    text-align: justify;
-}
-
 .redboxes {
     display: flex;
-    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .redboxes ul {
@@ -61,10 +62,19 @@ nav li {
     margin: 2%;
 }
 
+.outrotext p{
+    column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 30px;
+    -webkit-column-gap: 30px;
+    margin-top: 0px;
+}
+
 .sidebar {
     background: green;
     order: 1;
     width: 400px;
     height: 100%;
+    padding: 30px;
 }
 
