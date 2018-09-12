@@ -3,7 +3,7 @@
 
 
 let pars = document.getElementsByTagName('p');
-let parText = pars[pars.length -1].innerText
+let parText = pars[pars.length -1].innerHTML
 
 for (let i = 0; i < pars.length; i++){
     pars[i].innerHTML = parText;
