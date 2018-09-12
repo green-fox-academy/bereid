@@ -19,7 +19,9 @@ let businessLamp = document.getElementsByClassName('big');
 console.log(businessLamp[0], businessLamp[1]);
 
 let conceitedKing = document.querySelectorAll('.container .asteroid')
-console.log(conceitedKing[0], conceitedKing[1]);
+for (var i = 0; i < conceitedKing.length; i++){
+    alert('Haver, ' + conceitedKing[i].innerHTML);
+}
 
 let noBusiness = document.getElementsByTagName('div');
 console.log(noBusiness[0], noBusiness[1], noBusiness[2]);
