@@ -14,3 +14,4 @@ webPageUrl[0].setAttribute('href', 'https://www.greenfoxacademy.com/');
 
 let secondButton = document.getElementsByClassName('this-one');
 secondButton[0].disabled = true;
+secondButton[0].textContent = "Don't click me!"
