@@ -6,6 +6,7 @@
 let paragraphs = document.getElementsByTagName('p');
 let apple = document.getElementsByClassName('apple');
 let cat = document.getElementsByClassName('cat');
+let balloon = document.getElementsByClassName('balloon');
 
 if (paragraphs[0].classList.contains('dolphin')){
     apple[0].innerText = 'pear';
@@ -16,3 +17,4 @@ if (paragraphs[0].classList.contains('apple')){
 }
 
 apple[0].classList.add('red');
+balloon[0].classList.remove('balloon');
