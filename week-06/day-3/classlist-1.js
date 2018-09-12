@@ -5,7 +5,13 @@
 
 let paragraphs = document.getElementsByTagName('p');
 let apple = document.getElementsByClassName('apple');
+let cat = document.getElementsByClassName('cat');
 
-if (paragraphs[0].classList.contains('apple')){
+if (paragraphs[0].classList.contains('dolphin')){
     apple[0].innerText = 'pear';
 }
+
+if (paragraphs[0].classList.contains('apple')){
+    cat[0].innerText = 'dog';
+}
+
