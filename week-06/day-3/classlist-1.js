@@ -15,3 +15,4 @@ if (paragraphs[0].classList.contains('apple')){
     cat[0].innerText = 'dog';
 }
 
+apple[0].classList.add('red');
