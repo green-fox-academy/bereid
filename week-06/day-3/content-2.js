@@ -6,6 +6,9 @@
 let myNewItems = ['apple', 'banana', 'cat', 'dog'];
 let myItems = document.getElementsByTagName('li');
 
-for (let i = 0; i < myItems.length; i++){
+for (let i = 0; i < myItems.length; i++) {
     myItems[i].innerText = myNewItems[i];
 }
+
+let greenUl = document.getElementsByTagName('ul');
+greenUl[0].setAttribute('style', 'background-color: limegreen;');
