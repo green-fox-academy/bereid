@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Todos</title>
+    <title>
+        <%=title%>
+    </title>
 </head>
+
 <body>
-    
+    <h1>
+        <%=title%>
+    </h1>
+    <ul>
+        <% for(let i = 0; i < todos.length; i++){ %>
+        <li>
+            <%= todos[i] %>
+        </li>
+        <% } %>
+    </ul>
 </body>
+
 </html>
