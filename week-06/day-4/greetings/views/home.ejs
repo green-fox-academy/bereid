@@ -9,7 +9,14 @@
 </head>
 
 <body>
-    <h1>Welcome back, <%= name%>!</h1>
+    <h1>Welcome back,
+        <% if (name){ %>
+        <%=name%>
+        <% } else { %>
+        Guest
+        <% } %>
+        !</h1>
+
 </body>
 
 </html>
