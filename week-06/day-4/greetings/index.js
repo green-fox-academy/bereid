@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
             title: 'Greetings',
             name: req.query.name,
         });
-})
+});
 
 app.listen(PORT, () => {
     console.log(`Server is listening to PORT: ${PORT}`);
-})
+});
