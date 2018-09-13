@@ -1,18 +1,13 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
-app.get('/ping', (req, res) => {
-    res.json({
-        message: 'pong',
-        messageMessage : 'ping & pong',
-    })
-})
+app.use('/assets', express.static('assets'));
+
 
 app.get('/', (req, res) => {
-    res.json({
-        message: 'HELO TES!',
-    })
+    res.sendFile(path.join(__dirname, '/index.html'));
 })
 
 app.listen(PORT, () => {
