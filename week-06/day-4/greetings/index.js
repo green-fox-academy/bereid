@@ -7,9 +7,10 @@ const PORT = 3000;
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('home', {
-        title: '',
-    });
+        res.render('home', {
+            title: 'Greetings',
+            name: req.query.name, 
+        });
 })
 
 app.listen(PORT, () => {
