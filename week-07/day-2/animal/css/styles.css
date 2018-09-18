@@ -1,0 +1,12 @@
+body {
+    margin: auto auto;
+}
+
+#btn{
+    color: blue;
+}
+
+.hide-me{
+    opacity: 0;
+    transition: 0.7s;
+}
