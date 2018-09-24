@@ -17,16 +17,20 @@ const isThisACard = (card) => {
   return isCard;
 };
 
-const isThisAValidHand = (hand) => {
-  let splittedHand = hand.split(' ');
-  let isHand = false;
-  if (splittedHand.length === 5) {
-    splittedHand.forEach(e => {
-      isHand = isThisACard(e)
-    });
-  }
-  return isHand;
+const onlyUniqueCards = (cards) => {
+  let isDuplicate = false;
+  cards.forEach((e, i) => {
+    if (cards[i] === cards[i - 1]) {
+      isDuplicate = true;
+    }
+  });
+  return !isDuplicate;
 }
 
-console.log(isThisAValidHand('2H 3X 2H 2H 3X'));
-module.exports = { isThisACard };
+const isThisAValidHand = (hand) => {
+  let splittedHand = hand.split(' ');
+  let sortedHand = splittedHand.sort();
+  return splittedHand.length === 5 && splittedHand.every(e => isThisACard(e)) && onlyUniqueCards(sortedHand);
+}
+
+module.exports = { isThisACard, onlyUniqueCards, isThisAValidHand };
