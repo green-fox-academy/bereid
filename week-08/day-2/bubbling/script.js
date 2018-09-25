@@ -27,10 +27,10 @@ buttons.addEventListener('click', (event) => {
     xCoord = xCoord + 10;
     image.style.backgroundPositionX = `${xCoord+10}px`;
   } else if (event.target.dataset.direction === 'in') {
-    backgroundSize = backgroundSize + 10;
+    backgroundSize = backgroundSize + 20;
     image.style.backgroundSize = `${backgroundSize}%`;
   } else if (event.target.dataset.direction === 'out') {
-    backgroundSize = backgroundSize - 10;
+    backgroundSize = backgroundSize - 20;
     image.style.backgroundSize = `${backgroundSize}%`;
   }
   
