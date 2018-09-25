@@ -33,4 +33,9 @@ const isThisAValidHand = (hand) => {
   return splittedHand.length === 5 && splittedHand.every(e => isThisACard(e)) && onlyUniqueCards(sortedHand);
 }
 
-module.exports = { isThisACard, onlyUniqueCards, isThisAValidHand };
+const whichIsHigherCard = (cardOne, cardTwo) => {
+  return cardOne;
+}
+
+
+module.exports = { isThisACard, onlyUniqueCards, isThisAValidHand, whichIsHigherCard };
