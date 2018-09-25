@@ -11,6 +11,7 @@ const image = document.querySelector('.img-inspector');
 
 let yCoord = 0;
 let xCoord = 0;
+let backgroundSize = 200;
 
 buttons.addEventListener('click', (event) => {
   if (event.target.dataset.direction === 'up') {
@@ -26,9 +27,11 @@ buttons.addEventListener('click', (event) => {
     xCoord = xCoord + 10;
     image.style.backgroundPositionX = `${xCoord+10}px`;
   } else if (event.target.dataset.direction === 'in') {
-    image.style.backgroundSize = ``;
+    backgroundSize = backgroundSize + 10;
+    image.style.backgroundSize = `${backgroundSize}%`;
   } else if (event.target.dataset.direction === 'out') {
-    image.style.backgroundSize = ``;
+    backgroundSize = backgroundSize - 10;
+    image.style.backgroundSize = `${backgroundSize}%`;
   }
   
 });
