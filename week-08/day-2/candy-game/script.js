@@ -1,10 +1,12 @@
 const create = document.querySelector('.create-candies');
 const buy = document.querySelector('.buy-lollypops');
-const lollypops = document.querySelector('.lollypops')
+const lollypops = document.querySelector('.lollypops');
+const speed = document.querySelector('.speed');
 let candies = document.querySelector('.candies');
 let numberOfCandies = 10000;
-candies.innerHTML = numberOfCandies;
 let lollypopNumber = 3;
+candies.innerHTML = numberOfCandies;
+
 
 const giveACandy = () => {
   numberOfCandies++;
@@ -13,7 +15,7 @@ const giveACandy = () => {
 
 const buyALollypop = () => {
   if (numberOfCandies >= 100) {
-    numberOfCandies = numberOfCandies - 100;
+    numberOfCandies -= 100;
     candies.innerHTML = numberOfCandies;
     lollypopNumber++;
     lollypops.innerHTML += '🍭';
@@ -28,7 +30,13 @@ const candyForLollypop = () => {
   if (lollypopNumber >= 10) {
     numberOfCandies += Math.floor(lollypopNumber/10);
     candies.innerHTML = numberOfCandies;
+    countSpeed();
   }
+}
+
+const countSpeed = () => {
+  speedNumber = Math.floor(lollypopNumber / 10);
+  speed.innerHTML = speedNumber;
 }
 
 create.addEventListener('click', () => {
