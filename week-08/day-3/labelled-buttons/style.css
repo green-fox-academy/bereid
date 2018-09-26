@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+.text {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+  display: none;
+}
+
+.deletetext {
+  background: red;
+}
+
+.suretext {
+  background: green;
+}
+
+.deletetext p {
+  top: 50%;
+}
+
+button {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: #455;
+  color: white;
+  position: relative;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+  position: absolute;
+  z-index: 1;
+	pointer-events: none;
+	border-left-color: #455;
+	border-width: 10px;
+	margin-top: -10px;
+}
+
+.delete:hover+.deletetext {
+  display: block;
+}
+
+.sure:hover+.suretext {
+  display: block;
+}
+
+.delete:hover {
+  color: red;
+}
+
+.sure:hover {
+  color: green;
+}
+
+i {
+  font-size: 25px;
+}
