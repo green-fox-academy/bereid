@@ -1,0 +1,66 @@
+.wrapper {
+  background: rgb(51, 41, 97);
+  height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3); 
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  filter: brightness(0.8);
+}
+
+.blue {
+  background-image: linear-gradient(rgb(71, 96, 167), rgb(56, 78, 148));
+  border-width: 0px;
+  border-bottom: 5px rgb(40, 51, 111) solid;
+  border-top: 2px rgb(85, 113, 194) solid;
+}
+
+.green {
+  background-image: linear-gradient(rgb(0, 187, 93), rgb(0, 169, 77)); 
+  border-width: 0px;
+  border-bottom: 5px rgb(0, 112, 65) solid;
+  border-top: 2px rgb(0, 222, 140) solid;
+}
+
+.red {
+  background-image: linear-gradient(rgb(231, 34, 34), rgb(223, 0, 13)) ; 
+  border-width: 0px;
+  border-bottom: 5px rgb(144, 19, 40) solid;
+  border-top: 2px rgb(235, 81, 72) solid;
+}
+
+.light {
+  background-image: linear-gradient(rgb(0, 180, 242), rgb(0, 161, 240));
+  border-width: 0px;
+  border-bottom: 5px rgb(0, 104, 163) solid;
+  border-top: 2px rgb(0, 198, 252) solid;
+}
+
+.black {
+  background-image: linear-gradient(rgb(42, 43, 45), rgb(35, 36, 38));
+  border-width: 0px;
+  border-bottom: 5px rgb(55, 57, 57) solid;
+}
+
+.white {
+  background-image: linear-gradient(rgb(251, 251, 254), rgb(216, 224, 242));
+  border-width: 0px;
+  border-bottom: 5px rgb(153, 158, 180) solid;
+  border-top: 2px rgb(254, 255, 255) solid;
+}
