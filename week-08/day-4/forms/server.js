@@ -4,12 +4,19 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 const bodyParser = require('body-parser');
-const jsonParser = bodyParser.json();
+const cors = require('cors');
 
-app.use('/assets', express.static('assets'));
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+app.use(cors());
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+// app.get('/postElements', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'index.html'));
+// });
+
+app.post('/api/postElements', (req, res, err) => {
+    console.log(req.body);
+    res.json(req.body);
 });
 
 app.listen(PORT, ()=> {
