@@ -8,6 +8,7 @@
 
 const buttons = document.querySelector('nav');
 const image = document.querySelector('.img-inspector');
+console.log(buttons);
 
 let yCoord = 0;
 let xCoord = 0;
