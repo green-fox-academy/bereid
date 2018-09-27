@@ -12,5 +12,6 @@ body {
 form {
   background: white;
   padding: 50px;
+  padding-top: 25px;
   border-radius: 5px;
 }

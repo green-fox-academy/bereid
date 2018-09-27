@@ -13,11 +13,26 @@
 <body>
   <div class="wrapper">
     <form action="/form" method="POST">
-      <label for="favourite-pet"><h1> What is your favourite pet? </h1></label>
-      <input type="radio" name="favourite-pet" value="male"> Dog <br>
-      <input type="radio" name="favourite-pet" value="female"> Cat <br>
-      <input type="radio" name="favourite-pet" value="other"> Viktor the goldfish
-    </form>
+      <div class="favorites">
+        <label for="favourite-pet">
+          <h1> What is your favourite pet? </h1>
+        </label>
+        <input type="radio" name="favourite-pet" id="dog"> Dog <br>
+        <input type="radio" name="favourite-pet" id="cat"> Cat <br>
+        <input type="radio" name="favourite-pet" id="viktor"> Viktor the goldfish
+      </div>
+      <label for="wantsignup">
+        <div>
+          <h1> Do you want to sign up for cat facts? </h1>
+      </label>
+      <input type="radio" name="wantsignup" id="yes"> Yes <br>
+      <input type="radio" name="wantsignup" id="no"> No <br>
+  </div>
+  <div>
+    <button class="i-love-cats button" disabled>I love cats</button>
+    <button class="sign-up button" disabled>Sign up</button>
+  </div>
+  </form>
   </div>
 </body>
 
