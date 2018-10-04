@@ -2,9 +2,6 @@ window.onload = () => {
   let wrapper = document.querySelector('.wrapper');
   let newP = document.createElement('p');
   let URL = 'http://localhost:8080'
-  
-
-
   fetch(`${URL}/game`, {
     method: 'get',
     headers: {

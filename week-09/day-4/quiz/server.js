@@ -34,20 +34,31 @@ app.get('/modify-questions', (req, res) => {
 });
 
 app.get('/game', (req, res) => {
-  let random = Math.floor(Math.random() * 9 + 1);
-  connection.query(`SELECT question
-  FROM questions
-  WHERE id=${random}`, (error, result) => {
-    console.log(result);
-    if (error){
-      res.status(400).send('Database error' + error.message);
-    }
-    res.send(result);
-  });
+  connection.query(`SELECT id, question 
+  FROM questions ORDER BY RAND() LIMIT 1`, (error, result) => {
+      if (error) {
+        res.status(400).send('Database error' + error.message);
+      } else {
+        console.log(result[0].id)
+        connection.query(`SELECT answer, question_id, id, is_correct
+        FROM answers
+        WHERE question_id=${result[0].id}`, (innerError, innerResult) => {
+            if (innerError) {
+              res.status(400).send('Database error' + innerError.message);
+            } else {
+              res.send({
+                'id': result[0].id,
+                'question': result[0].question,
+                'answers': innerResult
+              })
+            }
+          });
+      }
+    });
 });
 
 app.get('/questions', (req, res) => {
-  
+
 });
 
 app.listen(PORT, () => {
