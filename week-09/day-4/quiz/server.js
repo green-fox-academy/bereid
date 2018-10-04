@@ -25,8 +25,12 @@ connection.connect((err) => {
   console.log('Connection established');
 });
 
-app.get('/', (req, res) => {
+app.get('/game', (req, res) => {
   res.sendFile(path.join(__dirname, '/assets/index.html'))
+});
+
+app.get('/questions', (req, res) => {
+  res.sendFile(path.join(__dirname, '/assets/questions.html'))
 });
 
 app.listen(PORT, () => {
