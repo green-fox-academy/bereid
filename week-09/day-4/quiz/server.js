@@ -34,10 +34,11 @@ app.get('/modify-questions', (req, res) => {
 });
 
 app.get('/game', (req, res) => {
-  let random = Math.floor(Math.random() * 10);
+  let random = Math.floor(Math.random() * 9 + 1);
   connection.query(`SELECT question
   FROM questions
   WHERE id=${random}`, (error, result) => {
+    console.log(result);
     if (error){
       res.status(400).send('Database error' + error.message);
     }
