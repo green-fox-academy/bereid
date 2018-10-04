@@ -39,7 +39,6 @@ app.get('/game', (req, res) => {
       if (error) {
         res.status(400).send('Database error' + error.message);
       } else {
-        console.log(result[0].id)
         connection.query(`SELECT answer, question_id, id, is_correct
         FROM answers
         WHERE question_id=${result[0].id}`, (innerError, innerResult) => {

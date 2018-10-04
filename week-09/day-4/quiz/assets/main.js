@@ -16,17 +16,13 @@ window.onload = () => {
       console.log(response);
       form.appendChild(questionField).innerHTML = response.question;
       response.answers.forEach(answer => {
-        let newAnswer = document.createElement('input');
-        newAnswer.type = 'radio';
-        newAnswer.value = answer.id;
+        let newAnswer = document.createElement('button');
+        newAnswer.type = 'submit';
         newAnswer.id = answer.id;
+        newAnswer.name = 'answer';
+        newAnswer.innerText = answer.answer;
+        newAnswer.classList.add('submit');
         form.appendChild(newAnswer);
-        let answerLabel = document.createElement('label');
-        answerLabel.htmlFor = answer.id;
-        answerLabel.innerText = answer.answer;
-        form.appendChild(answerLabel);
-        
-        
       });
     });
   ;
