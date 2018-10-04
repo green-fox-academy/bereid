@@ -34,7 +34,15 @@ app.get('/modify-questions', (req, res) => {
 });
 
 app.get('/game', (req, res) => {
-  
+  let random = Math.floor(Math.random() * 10);
+  connection.query(`SELECT question
+  FROM questions
+  WHERE id=${random}`, (error, result) => {
+    if (error){
+      res.status(400).send('Database error' + error.message);
+    }
+    res.send(result);
+  });
 });
 
 app.get('/questions', (req, res) => {
