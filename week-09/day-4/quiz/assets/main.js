@@ -7,6 +7,7 @@ window.onload = () => {
   wrapper.appendChild(scoreSheet);
   let questionContainer = document.createElement('div');
   wrapper.appendChild(questionContainer);
+  questionContainer.classList.add('container');
   let questionField = document.createElement('legend');
   fetch(`${URL}/game`, {
     method: 'get',
@@ -37,8 +38,12 @@ window.onload = () => {
             newAnswer.style.background = 'red';
             newAnswer.disabled = true;
           }
-
         });
       });
     });
+  let manageQuestions = document.createElement('a');
+  wrapper.appendChild(manageQuestions);
+  manageQuestions.href = `${URL}/modify-questions`
+  manageQuestions.innerHTML = 'Manage questions';
+  manageQuestions.classList.add('questionlink');
 } 

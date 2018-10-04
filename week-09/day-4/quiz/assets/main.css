@@ -1,9 +1,15 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #ACCE55;
+}
+
 h2 {
   text-align: center;
   color: #346135;
 }
 
-form {
+.container {
   padding-bottom: 30px;
   width: 500px;
   margin: 0 auto;
@@ -32,4 +38,12 @@ legend {
   background-color: #346135;
   color: #ACCE55;
   border-radius: 5px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #346135;
+  display:block;
+  text-align:center;
+  margin-top: 20px;
 }

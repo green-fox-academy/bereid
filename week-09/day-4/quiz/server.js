@@ -57,7 +57,9 @@ app.get('/game', (req, res) => {
 });
 
 app.get('/questions', (req, res) => {
-
+  connection.query(`SELECT question FROM questions;`, (error, result) => {
+    res.send(result);
+  });
 });
 
 app.listen(PORT, () => {
